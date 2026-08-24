@@ -1,0 +1,105 @@
+{
+  "best_model": "Gradient Boosting",
+  "numeric_features": [
+    "num_people_waiting",
+    "queue_length",
+    "active_counters",
+    "avg_service_time",
+    "priority_customers",
+    "historical_queue_load",
+    "previous_waiting_time",
+    "hour"
+  ],
+  "categorical_features": [
+    "day_of_week",
+    "time_period"
+  ],
+  "all_features": [
+    "num_people_waiting",
+    "queue_length",
+    "active_counters",
+    "avg_service_time",
+    "priority_customers",
+    "historical_queue_load",
+    "previous_waiting_time",
+    "hour",
+    "day_of_week",
+    "time_period"
+  ],
+  "target": "actual_waiting_time",
+  "test_metrics": {
+    "model": "Gradient Boosting",
+    "type": "model",
+    "MAE": 3.56,
+    "RMSE": 5.85,
+    "R2": 0.885,
+    "cv_MAE": 3.66,
+    "cv_RMSE": 6.01,
+    "cv_R2": 0.872,
+    "train_seconds": 4.3
+  },
+  "cv_metrics": {
+    "cv_mae": 3.6582291984978403,
+    "cv_rmse": 6.014368329264337,
+    "cv_r2": 0.8716450963316866
+  },
+  "residual_p10": -5.2,
+  "residual_p90": 4.3,
+  "day_of_week_values": [
+    "Friday",
+    "Monday",
+    "Saturday",
+    "Sunday",
+    "Thursday",
+    "Tuesday",
+    "Wednesday"
+  ],
+  "time_period_values": [
+    "Afternoon",
+    "Evening",
+    "Morning",
+    "Night"
+  ],
+  "feature_ranges_train": {
+    "num_people_waiting": {
+      "min": 0.0,
+      "max": 24.0,
+      "median": 8.0
+    },
+    "queue_length": {
+      "min": 3.0,
+      "max": 31.0,
+      "median": 13.0
+    },
+    "active_counters": {
+      "min": 1.0,
+      "max": 6.0,
+      "median": 4.0
+    },
+    "avg_service_time": {
+      "min": 2.0,
+      "max": 18.1,
+      "median": 7.5
+    },
+    "priority_customers": {
+      "min": 0.0,
+      "max": 5.0,
+      "median": 0.0
+    },
+    "historical_queue_load": {
+      "min": 0.0,
+      "max": 20.0,
+      "median": 8.7
+    },
+    "previous_waiting_time": {
+      "min": 0.0,
+      "max": 86.9,
+      "median": 14.8
+    },
+    "hour": {
+      "min": 0.0,
+      "max": 23.0,
+      "median": 13.0
+    }
+  }
+}
